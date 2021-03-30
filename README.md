@@ -1,4 +1,4 @@
-## title
+## Title
 
 > brief description
 
@@ -10,8 +10,8 @@
 
 To get a local copy up and running follow these simple example steps.
 
-- git clone `git@github.com:AymenBida/<repo>.git`
-- cd into the `<repo>`
+- git clone `git@github.com:AymenBida/restaurant-page.git`
+- cd into the `restaurant-page`
 - open `index.html` 
 
 ### Prerequisites
@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AymenBida/<repo>/issues).
+Feel free to check the [issues page](https://github.com/AymenBida/restaurant-page/issues).
 
 ## Acknowledgments
 
