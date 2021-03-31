@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+:root {
+  --ff: 'Nunito', sans-serif;
+  --bolder: 800;
+  --p-big: 2.5em;
+  --p-ltl: 1.5em;
+}
+
+.cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../images/pexels-photo-4230621.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/pexels-photo-4230621.jpeg);
+  background-position: center;
+}
+
+.cover__card {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding: var(--p-big);
+}
+
+.cover__title {
+  font-family: var(--ff);
+  font-weight: var(--bolder);
+}
+
+.cover__body {
+  font-family: var(--ff);
+}
+
+.cover__image {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-image: url(../images/nestle-plant-based-meat.jpg);
+  background-position: center;
+}
+/*# sourceMappingURL=styles.css.map */

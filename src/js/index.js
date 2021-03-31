@@ -1,1 +1,2 @@
-alert('It is working !!!');
+import pageLoad from './page_load';
+
