@@ -1,2 +1,3 @@
-import pageLoad from './page_load';
+import pageLoad from './page_load.js';
 
+pageLoad();
