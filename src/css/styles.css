@@ -86,7 +86,6 @@
 
 .home {
   padding: var(--p-big);
-  display: none;
 }
 
 .home__title {
@@ -109,7 +108,6 @@
 
 .menu-section {
   padding: var(--p-big);
-  display: none;
 }
 
 .menu__main-title {

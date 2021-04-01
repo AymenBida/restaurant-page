@@ -9,4 +9,14 @@ function createElement(type, style) {
   return element;
 };
 
-export { locateContainer, createElement };
+function findSection(section) {
+  const element = document.querySelector(`.${section}`);
+  return element;
+}
+
+function removeSection(section) {
+  const element = findSection(section);
+  element.remove();
+}
+
+export { locateContainer, createElement, removeSection };

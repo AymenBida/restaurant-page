@@ -3,41 +3,19 @@ import * as domTools from './dom_tools.js';
 export default function homeLoad() {
   const content = domTools.locateContainer();
 
-  const cover = domTools.createElement('section', 'cover');
-  content.appendChild(cover);
+  const home = domTools.createElement('section', 'home');
+  content.appendChild(home);
 
-  const coverContent = domTools.createElement('div', 'cover__content');
-  cover.appendChild(coverContent);
+  const homeTitle = domTools.createElement('h2', 'home__title');
+  homeTitle.textContent = 'About us';
+  home.appendChild(homeTitle);
 
-  const coverCard = domTools.createElement('div', 'cover__card');
-  coverContent.appendChild(coverCard);
+  const homeBody = domTools.createElement('p', 'home__body');
+  homeBody.textContent = `Our restaurant is the best restaurant you can find in California for vegan people.
+  We have all types of vegan food and you will be very pleased and healthier when eating here.`;
+  home.appendChild(homeBody);
 
-  const coverTitle = domTools.createElement('h1', 'cover__title');
-  coverTitle.textContent = 'Vegan forever';
-  coverCard.appendChild(coverTitle);
-
-  const coverBody = domTools.createElement('p', 'cover__body');
-  coverBody.textContent = `Serves meat, vegan options available. Thai food restaurant with 50% of dishes being
-    vegan. Marked vegan dishes and options on the menu include snacks, soup, wok, curry, fried noodles and rice.
-    Also serves plant based desserts and drinks. Has free Wi-Fi.`;
-  coverCard.appendChild(coverBody);
-
-  const navigation = domTools.createElement('nav', 'navigation');
-  coverContent.appendChild(navigation);
-
-  const homeNav = domTools.createElement('div', 'home-nav');
-  homeNav.textContent = 'Home';
-  navigation.appendChild(homeNav);
-
-  const menuNav = domTools.createElement('div', 'menu-nav');
-  menuNav.textContent = 'Menu';
-  navigation.appendChild(menuNav);
-
-  const contactNav = domTools.createElement('div', 'contact-nav');
-  contactNav.textContent = 'Contact';
-  navigation.appendChild(contactNav);
-
-  const coverImage = domTools.createElement('div', 'cover__image');
-  cover.appendChild(coverImage);
+  const homeImage = domTools.createElement('div', 'home__image');
+  home.appendChild(homeImage);
 }
 
