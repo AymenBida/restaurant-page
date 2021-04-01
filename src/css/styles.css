@@ -109,6 +109,7 @@
 
 .menu-section {
   padding: var(--p-big);
+  display: none;
 }
 
 .menu__main-title {
@@ -150,5 +151,23 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.contact {
+  padding: var(--p-big);
+}
+
+.contact__title {
+  font-weight: var(--bolder);
+}
+
+.contact__input {
+  margin-bottom: 1em;
+}
+
+.contact__submit {
+  display: block;
+  width: 100%;
+  margin-top: 2em;
 }
 /*# sourceMappingURL=styles.css.map */

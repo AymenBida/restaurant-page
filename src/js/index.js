@@ -1,3 +1,3 @@
-import pageLoad from './page_load.js';
+import coverLoad from './cover_load.js';
 
-// pageLoad();
+coverLoad();

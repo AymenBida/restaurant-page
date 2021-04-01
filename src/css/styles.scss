@@ -101,6 +101,7 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
 
 .menu-section {
   padding: var(--p-big);
+  display: none;
 }
 
 .menu {
@@ -136,5 +137,23 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
     background-color: rgba(white, 0.8);
     border-radius: 0 0 1em 1em;
     flex-grow: 1;
+  }
+}
+
+.contact {
+  padding: var(--p-big);
+
+  &__title {
+    font-weight: var(--bolder);
+  }
+
+  &__input {
+    margin-bottom: 1em;
+  }
+
+  &__submit {
+    display: block;
+    width: 100%;
+    margin-top: 2em;
   }
 }
