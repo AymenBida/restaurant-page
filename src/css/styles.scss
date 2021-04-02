@@ -12,6 +12,9 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
   --c1: hsl(37.6,50%,85%);
   --c2: hsl(75.3,50%,85%);
   --c3: hsl(344.7,50%,85%);
+  --c1-d: hsl(37.6,50%,35%);
+  --c2-d: hsl(75.3,50%,35%);
+  --c3-d: hsl(344.7,50%,35%);
 }
 
 #content {
@@ -65,18 +68,28 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
 
   .home-nav {
     background-color: var(--c1);
+    &.active {
+      background-color: var(--c1-d);
+    }
   }
 
   .menu-nav {
     background-color: var(--c2);
+    &.active {
+      background-color: var(--c2-d);
+    }
   }
 
   .contact-nav {
     background-color: var(--c3);
+    &.active {
+      background-color: var(--c3-d);
+    }
   }
 }
 
 .home {
+  display: none;
   padding: var(--p-big);
 
   &__title {
@@ -99,6 +112,7 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
 }
 
 .menu-section {
+  display: none;
   padding: var(--p-big);
 }
 
@@ -139,6 +153,7 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
 }
 
 .contact {
+  display: none;
   padding: var(--p-big);
 
   &__title {
@@ -155,3 +170,16 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
     margin-top: 2em;
   }
 }
+
+.active {
+  color: white;
+  cursor: default;
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.show {
+  display: block !important;
+}
+

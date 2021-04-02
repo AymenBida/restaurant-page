@@ -4,6 +4,8 @@ export default function homeLoad() {
   const content = domTools.locateContainer();
 
   const home = domTools.createElement('section', 'home');
+  home.dataset.toggle = 'home-nav';
+  home.classList.add('show');
   content.appendChild(home);
 
   const homeTitle = domTools.createElement('h2', 'home__title');

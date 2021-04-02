@@ -4,6 +4,7 @@ export default function contactLoad() {
   const content = domTools.locateContainer();
 
   const contact = domTools.createElement('section', 'contact');
+  contact.dataset.toggle = 'contact-nav';
   content.appendChild(contact);
 
   const contactTitle = domTools.createElement('h2', 'contact__title');

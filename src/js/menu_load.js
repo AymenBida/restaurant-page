@@ -60,6 +60,7 @@ export default function menuLoad() {
   const content = domTools.locateContainer();
 
   const menuSection = domTools.createElement('section', 'menu-section');
+  menuSection.dataset.toggle = 'menu-nav';
   content.appendChild(menuSection);
 
   const menuMainTitle = domTools.createElement('h2', 'menu__main-title');

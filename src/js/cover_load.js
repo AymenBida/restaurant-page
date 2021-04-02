@@ -27,14 +27,18 @@ export default function coverLoad() {
 
   const homeNav = domTools.createElement('div', 'home-nav');
   homeNav.textContent = 'Home';
+  homeNav.dataset.type = 'nav';
+  homeNav.classList.add('active');
   navigation.appendChild(homeNav);
 
   const menuNav = domTools.createElement('div', 'menu-nav');
   menuNav.textContent = 'Menu';
+  menuNav.dataset.type = 'nav';
   navigation.appendChild(menuNav);
 
   const contactNav = domTools.createElement('div', 'contact-nav');
   contactNav.textContent = 'Contact';
+  contactNav.dataset.type = 'nav';
   navigation.appendChild(contactNav);
 
   const coverImage = domTools.createElement('div', 'cover__image');
