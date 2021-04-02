@@ -1,4 +1,4 @@
-import * as domTools from './dom_tools.js';
+import * as domTools from './dom_tools';
 
 export default function coverLoad() {
   const content = domTools.locateContainer();
@@ -44,4 +44,3 @@ export default function coverLoad() {
   const coverImage = domTools.createElement('div', 'cover__image');
   cover.appendChild(coverImage);
 }
-

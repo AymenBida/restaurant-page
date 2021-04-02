@@ -1,4 +1,4 @@
-import * as domTools from './dom_tools.js';
+import * as domTools from './dom_tools';
 
 export default function homeLoad() {
   const content = domTools.locateContainer();
@@ -20,4 +20,3 @@ export default function homeLoad() {
   const homeImage = domTools.createElement('div', 'home__image');
   home.appendChild(homeImage);
 }
-

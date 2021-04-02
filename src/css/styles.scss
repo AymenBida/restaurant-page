@@ -9,12 +9,12 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
   --p-ltl: 1.5em;
   --p-sml: 0.5em;
   // colors
-  --c1: hsl(37.6,50%,85%);
-  --c2: hsl(75.3,50%,85%);
-  --c3: hsl(344.7,50%,85%);
-  --c1-d: hsl(37.6,50%,35%);
-  --c2-d: hsl(75.3,50%,35%);
-  --c3-d: hsl(344.7,50%,35%);
+  --c1: hsl(37.6, 50%, 85%);
+  --c2: hsl(75.3, 50%, 85%);
+  --c3: hsl(344.7, 50%, 85%);
+  --c1-d: hsl(37.6, 50%, 35%);
+  --c2-d: hsl(75.3, 50%, 35%);
+  --c3-d: hsl(344.7, 50%, 35%);
 }
 
 #content {
@@ -61,13 +61,15 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
     font-size: 1.2em;
     font-weight: var(--bolder);
     cursor: pointer;
+
     &:hover {
-      box-shadow: black 0px -3px 3px -2px;
+      box-shadow: black 0 -3px 3px -2px;
     }
   }
 
   .home-nav {
     background-color: var(--c1);
+
     &.active {
       background-color: var(--c1-d);
     }
@@ -75,6 +77,7 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
 
   .menu-nav {
     background-color: var(--c2);
+
     &.active {
       background-color: var(--c2-d);
     }
@@ -82,6 +85,7 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
 
   .contact-nav {
     background-color: var(--c3);
+
     &.active {
       background-color: var(--c3-d);
     }
@@ -146,7 +150,7 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
 
   &__content {
     padding: var(--p-ltl);
-    background-color: rgba(white, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 0 0 1em 1em;
     flex-grow: 1;
   }
@@ -174,6 +178,7 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
 .active {
   color: white;
   cursor: default;
+
   &:hover {
     box-shadow: none;
   }
@@ -182,4 +187,3 @@ $transparent-filter: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.8));
 .show {
   display: block !important;
 }
-

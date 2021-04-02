@@ -1,4 +1,4 @@
-import * as domTools from './dom_tools.js';
+import * as domTools from './dom_tools';
 
 export default function contactLoad() {
   const content = domTools.locateContainer();
@@ -39,4 +39,3 @@ export default function contactLoad() {
   contactSubmit.textContent = 'Send';
   contactForm.appendChild(contactSubmit);
 }
-

@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
 :root {
   --ff: 'Nunito', sans-serif;
   --bolder: 800;
   --p-big: 2.5em;
   --p-ltl: 1.5em;
   --p-sml: 0.5em;
-  --c1: hsl(37.6,50%,85%);
-  --c2: hsl(75.3,50%,85%);
-  --c3: hsl(344.7,50%,85%);
-  --c1-d: hsl(37.6,50%,35%);
-  --c2-d: hsl(75.3,50%,35%);
-  --c3-d: hsl(344.7,50%,35%);
+  --c1: hsl(37.6, 50%, 85%);
+  --c2: hsl(75.3, 50%, 85%);
+  --c3: hsl(344.7, 50%, 85%);
+  --c1-d: hsl(37.6, 50%, 35%);
+  --c2-d: hsl(75.3, 50%, 35%);
+  --c3-d: hsl(344.7, 50%, 35%);
 }
 
 #content {
@@ -24,13 +25,12 @@
 
 .cover {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .cover__content {
   -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  flex-basis: 60%;
 }
 
 .cover__card {
@@ -43,7 +43,7 @@
 
 .cover__image {
   -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  flex-basis: 40%;
   background-image: url(../images/nestle-plant-based-meat.jpg);
   background-position: center;
 }
@@ -51,16 +51,15 @@
 .navigation {
   border-top: solid lightgray 1px;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  flex-basis: 60%;
   height: 3em;
 }
 
 .navigation > * {
   -ms-flex-preferred-size: 33.333%;
-      flex-basis: 33.333%;
+  flex-basis: 33.333%;
   -webkit-transition: all ease-out 250ms;
   transition: all ease-out 250ms;
   text-align: center;
@@ -71,8 +70,8 @@
 }
 
 .navigation > *:hover {
-  -webkit-box-shadow: black 0px -3px 3px -2px;
-          box-shadow: black 0px -3px 3px -2px;
+  -webkit-box-shadow: black 0 -3px 3px -2px;
+  box-shadow: black 0 -3px 3px -2px;
 }
 
 .navigation .home-nav {
@@ -138,12 +137,11 @@
   border-radius: 1em;
   height: 100%;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .menu__title {
@@ -164,8 +162,8 @@
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 0 0 1em 1em;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .contact {
@@ -194,10 +192,9 @@
 
 .active:hover {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .show {
   display: block !important;
 }
-/*# sourceMappingURL=styles.css.map */

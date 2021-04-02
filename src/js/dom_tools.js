@@ -1,13 +1,13 @@
 function locateContainer() {
   const container = document.getElementById('content');
   return container;
-};
+}
 
 function createElement(type, style) {
   const element = document.createElement(type);
   element.setAttribute('class', style);
   return element;
-};
+}
 
 function findElement(classname) {
   const element = document.querySelector(`.${classname}`);
@@ -17,7 +17,7 @@ function findElement(classname) {
 function removeElement(classname) {
   const element = findElement(classname);
   element.remove();
-} 
+}
 
 function activateNavElement(navElement) {
   const element = document.querySelector(`.${navElement}`);
@@ -26,19 +26,18 @@ function activateNavElement(navElement) {
 
 function addEvent(navElement, func) {
   const element = document.querySelector(`.${navElement}`);
-  element.addEventListener('click', function() {
+  element.addEventListener('click', () => {
     func(navElement);
   }, true);
 }
 
 function removeEvent(navElement, func) {
-  navElement.removeEventListener('click', function() {
+  navElement.removeEventListener('click', () => {
     func(navElement);
   }, true);
 }
 
 function findSection(toggler) {
-  console.log(toggler);
   const element = document.querySelector(`[data-toggle="${toggler}"]`);
   return element;
 }
@@ -48,14 +47,12 @@ function toggleShowSection(toggler) {
   element.classList.toggle('show');
 }
 
-function showSection(toggler) {
-  toggleShowSection(toggler);
-  eventHandler();
-  activateNavElement(toggler);
+function findTabs() {
+  return document.querySelectorAll('[data-type="nav"]');
 }
 
 function eventHandler() {
-  let tabs = findTabs();
+  const tabs = findTabs();
   tabs.forEach(tab => {
     if (tab.classList.contains('active')) {
       tab.classList.toggle('active');
@@ -65,8 +62,10 @@ function eventHandler() {
   });
 }
 
-function findTabs() {
-  return document.querySelectorAll('[data-type="nav"]');
+function showSection(toggler) {
+  toggleShowSection(toggler);
+  eventHandler();
+  activateNavElement(toggler);
 }
 
 export {
@@ -74,5 +73,5 @@ export {
   createElement,
   removeElement,
   addEvent,
-  showSection
+  showSection,
 };
