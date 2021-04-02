@@ -1,3 +1,4 @@
+import '../css/styles.scss';
 import coverLoad from './cover_load.js';
 import homeLoad from './home_load.js';
 import menuLoad from './menu_load.js';
