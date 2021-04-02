@@ -2,7 +2,7 @@
 
 > This is a basic restaurant page made as an exercise to practice manipulating the DOM with javascript
 
-![screenshot](./assets/images/screenshot.png)
+![screenshot](.src/images/screenshot.png)
 ## Built With 
 
 - JavaScript, HTML5, SCSS and Bootstrap
