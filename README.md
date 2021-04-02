@@ -1,10 +1,11 @@
-## Title
+## Restaurant JS
 
-> brief description
+> This is a basic restaurant page made as an exercise to practice manipulating the DOM with javascript
 
+![screenshot](./assets/images/screenshot.png)
 ## Built With 
 
-- JavaScript, HTML5 and Bootstrap
+- JavaScript, HTML5, SCSS and Bootstrap
 
 ## Getting Started
 
