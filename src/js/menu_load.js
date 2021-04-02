@@ -4,32 +4,32 @@ const menuItems = [
   {
     title: 'Butternut Mole Enchiladas',
     body: 'A delicious meal based on the popular Mexican Enchiladas',
-    image: '../src/images/butternut-mole-enchiladas-1594659122.jpg'
+    image: '\./src/images/butternut-mole-enchiladas-1594659122.jpg'
   },
   {
     title: 'Greek Chiken Wings',
     body: 'Fried chicken wings with delicious Greek salad',
-    image: '../src/images/ghk080116ykfeature02-1567609381.png'
+    image: '\./src/images/ghk080116ykfeature02-1567609381.png'
   },
   {
     title: 'Swedish Salmon Salad',
     body: 'The best Swedish quality salmon with cooked green beans',
-    image: '../src/images/low-calorie-meals-1556302866.png'
+    image: '\./src/images/low-calorie-meals-1556302866.png'
   },
   {
     title: 'Spring Salad',
     body: 'Vegan fresh green salad with cucumber and corn',
-    image: '../src/images/spring-salad-recipe-with-apricot-vinaigrette-1611256040.jpg'
+    image: '\./src/images/spring-salad-recipe-with-apricot-vinaigrette-1611256040.jpg'
   },
   {
     title: 'Heirloom Tomato Salad',
     body: 'A variety of tomatoes and peppers in one spicy salad',
-    image: '../src/images/heirloom-tomato-salad-lead-1589406257.jpg'
+    image: '\./src/images/heirloom-tomato-salad-lead-1589406257.jpg'
   },
   {
     title: 'Vegan Strawberry Cookies',
     body: 'Your classic strawberry cookies but 100% vegan',
-    image: '../src/images/strawberry-oatmeal-cookies-1609276240.jpg'
+    image: '\./src/images/strawberry-oatmeal-cookies-1609276240.jpg'
   }
 ]
 
