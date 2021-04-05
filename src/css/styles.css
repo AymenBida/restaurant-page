@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
+:root {
+  --ff: 'Nunito', sans-serif;
+  --bolder: 800;
+  --p-big: 2.5em;
+  --p-ltl: 1.5em;
+  --p-sml: 0.5em;
+  --c1: hsl(37.6, 50%, 85%);
+  --c2: hsl(75.3, 50%, 85%);
+  --c3: hsl(344.7, 50%, 85%);
+  --c1-d: hsl(37.6, 50%, 35%);
+  --c2-d: hsl(75.3, 50%, 35%);
+  --c3-d: hsl(344.7, 50%, 35%);
+}
+
+#content {
+  font-family: var(--ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.8))), url(../images/pexels-photo-4230621.jpeg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)), url(../images/pexels-photo-4230621.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+}
+
+.cover {
+  display: -webkit-box;
+  display: flex;
+}
+
+.cover__content {
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%;
+}
+
+.cover__card {
+  padding: var(--p-big);
+}
+
+.cover__title {
+  font-weight: var(--bolder);
+}
+
+.cover__image {
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
+  background-image: url(../images/nestle-plant-based-meat.jpg);
+  background-position: center;
+}
+
+.navigation {
+  border-top: solid lightgray 1px;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%;
+  height: 3em;
+}
+
+.navigation > * {
+  -ms-flex-preferred-size: 33.333%;
+  flex-basis: 33.333%;
+  -webkit-transition: all ease-out 250ms;
+  transition: all ease-out 250ms;
+  text-align: center;
+  line-height: 2.2em;
+  font-size: 1.2em;
+  font-weight: var(--bolder);
+  cursor: pointer;
+}
+
+.navigation > *:hover {
+  -webkit-box-shadow: black 0 -3px 3px -2px;
+  box-shadow: black 0 -3px 3px -2px;
+}
+
+.navigation .home-nav {
+  background-color: var(--c1);
+}
+
+.navigation .home-nav.active {
+  background-color: var(--c1-d);
+}
+
+.navigation .menu-nav {
+  background-color: var(--c2);
+}
+
+.navigation .menu-nav.active {
+  background-color: var(--c2-d);
+}
+
+.navigation .contact-nav {
+  background-color: var(--c3);
+}
+
+.navigation .contact-nav.active {
+  background-color: var(--c3-d);
+}
+
+.home {
+  display: none;
+  padding: var(--p-big);
+}
+
+.home__title {
+  font-weight: var(--bolder);
+}
+
+.home__body {
+  font-size: 1.2em;
+}
+
+.home__image {
+  margin: 2em auto;
+  width: 80%;
+  border-radius: 1em;
+  height: 600px;
+  background-image: url(../images/vegan-plant-based-news-healthy-food.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.menu-section {
+  display: none;
+  padding: var(--p-big);
+}
+
+.menu__main-title {
+  text-align: center;
+  font-weight: var(--bolder);
+  margin-bottom: 0.8em;
+}
+
+.menu__card {
+  border: lightgray solid 1px;
+  border-radius: 1em;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.menu__title {
+  font-weight: var(--bolder);
+}
+
+.menu__body {
+  margin-bottom: 0;
+}
+
+.menu__image {
+  width: 100%;
+  border-radius: 1em 1em 0 0;
+}
+
+.menu__content {
+  padding: var(--p-ltl);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 0 1em 1em;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.contact {
+  display: none;
+  padding: var(--p-big);
+}
+
+.contact__title {
+  font-weight: var(--bolder);
+}
+
+.contact__input {
+  margin-bottom: 1em;
+}
+
+.contact__submit {
+  display: block;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.active {
+  color: white;
+  cursor: default;
+}
+
+.active:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.show {
+  display: block !important;
+}
