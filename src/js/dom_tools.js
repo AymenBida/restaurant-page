@@ -56,7 +56,9 @@ function eventHandler() {
   tabs.forEach(tab => {
     if (tab.classList.contains('active')) {
       tab.classList.toggle('active');
+      /* eslint-disable no-use-before-define */
       removeEvent(tab, showSection);
+      /* eslint-enable no-use-before-define */
       toggleShowSection(tab.classList[0]);
     }
   });

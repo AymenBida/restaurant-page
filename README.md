@@ -13,7 +13,7 @@ To get a local copy up and running follow these simple example steps.
 
 - git clone `git@github.com:AymenBida/restaurant-page.git`
 - cd into the `restaurant-page`
-- open `index.html` 
+- open `dist/index.html` 
 
 ### Prerequisites
 
